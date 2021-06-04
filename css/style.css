@@ -1,0 +1,141 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+
+  color: #ffffff;
+  background-color: #e2efde;
+
+  font: 16px/1.5 "Main-Font", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+p {
+  margin-top: 0;
+}
+
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+.todo {
+  max-width: 800px;
+  min-height: 600px;
+  margin: 50px auto;
+  padding: 20px;
+
+  text-align: center;
+
+  border: 1px solid #bdbdbd;
+  border-radius: 20px;
+  background-color: #607d8b;
+}
+
+.todo__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo__list {
+  width: 60%;
+  padding: 20px;
+
+  text-align: left;
+
+  border-right: 1px solid #bdbdbd;
+}
+
+.todo__item {
+  margin: 10px 0 0 0;
+}
+
+.item__title {
+  display: inline-block;
+
+  margin: 0px;
+
+  cursor: pointer;
+}
+
+.todo__create {
+  width: 40%;
+  height: 400px;
+}
+
+.create {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  padding: 20px;
+}
+
+.create__title {
+  height: 40px;
+
+  border: none;
+  border-radius: 5px;
+  outline: none;
+
+  font-size: 18px;
+}
+
+.create__button {
+  display: inline-block;
+
+  margin: 20px 0 0 0;
+  padding: 15px 10px;
+
+  text-align: center;
+
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #00bcd4;
+}
+
+.create__button:hover {
+  box-shadow: 0 0 10px 0 black;
+}
+
+.create__button:focus {
+  border: 1px solid #bdbdbd;
+}
+
+.create__button:active {
+  transform: scale(0.95);
+}
+
+.done {
+  text-decoration: line-through;
+}

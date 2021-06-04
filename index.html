@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>ToDo List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <article class="todo">
+    <h1>ToDo List</h1>
+    <div class="todo__flex">
+      <ol class="todo__list">
+        <li class="todo__item item">
+          <h2 class="item__title done">Купить хлеб</h2>
+        </li>
+        <li class="todo__item item">
+          <h2 class="item__title">Доделать ДЗ</h2>
+        </li>
+      </ol>
+      <form class="todo__create create">
+        <input type="text" placeholder="Задача" class="create__title" />
+        <button type="submit" return="false" class="create__button" id="create-button">
+          Добавить
+        </button>
+      </form>
+    </div>
+  </article>
+</body>
+
+</html>
